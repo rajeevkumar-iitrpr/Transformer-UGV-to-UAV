@@ -57,20 +57,7 @@ The transformation from **ground mode** to **flight mode** is achieved using ser
 - **Mode Switching Logic:** Controlled via auxiliary channel or ESP32 script  
 - **Servo Control:** PWM signals triggered based on mode state (Ground ↔ Air)
 
-Example pseudocode for transformation:
+## 🧩 Media
 
-```cpp
-if (mode == "UGV") {
-  stopFlightMotors();
-  activateDriveMotors();
-  moveServosToGroundPosition();
-}
-
-if (mode == "UAV") {
-  stopDriveMotors();
-  moveServosToFlightPosition();
-  activateFlightMotors();
-}
-
-<img width="1214" height="781" alt="Screenshot 2025-10-21 210839" src="https://github.com/user-attachments/assets/de9dbdc0-4fd0-41ca-add4-1850af6a2260" />
-<img width="1127" height="685" alt="Screenshot 2025-10-21 211517" src="https://github.com/user-attachments/assets/aba14f93-d4f0-4028-ac0b-6726d14d5a70" />
+<img width="600" height="350" alt="Screenshot 2025-10-21 210839" src="https://github.com/user-attachments/assets/de9dbdc0-4fd0-41ca-add4-1850af6a2260" />
+<img width="600" height="350" alt="Screenshot 2025-10-21 211517" src="https://github.com/user-attachments/assets/aba14f93-d4f0-4028-ac0b-6726d14d5a70" />
